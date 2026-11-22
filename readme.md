@@ -59,7 +59,10 @@ Only the full name and accommodation-interest choice are required.
 In the existing Netlify project's **Forms** settings, enable form detection
 before deploying the form. After deployment, check that `travel-plans` appears
 in Forms. Responses are available there to the project's authorized members;
-they are not published in the repository or on the website. Monitor the Free
+use **Download CSV** to review all fields, including arrival dates and
+accommodation interest. The standard `name` field also identifies the guest in
+Netlify's submissions list. Responses are not published in the repository or
+on the website. Monitor the Free
 plan's usage and limits in Netlify rather than upgrading automatically.
 
 Netlify handles the POST and redirects accepted submissions to
