@@ -110,7 +110,7 @@ body:has(.lightbox[open]) { overflow: hidden; }
   .monogram { width: 120px; }
   nav { gap: 9px 18px; font-size: 11px; }
   .hero { padding-top: 28px; padding-bottom: 65px; }
-  .hero h1 { font-size: clamp(72px, 17vw, 120px); margin-bottom: 30px; }
+  .hero h1 { font-size: clamp(48px, 12vw, 90px); margin-bottom: 30px; }
   .hero-date { font-size: 10px; letter-spacing: 0.05em; }
   .hero-date span { margin-inline: 6px; }
   .section { padding: 75px 24px; }

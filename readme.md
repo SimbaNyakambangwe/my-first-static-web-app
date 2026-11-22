@@ -1,4 +1,4 @@
-# Simba & Rujeko wedding website
+# Simbarashe & Rujeko wedding website
 
 A standalone, responsive HTML/CSS/JavaScript wedding website. All photographs are
 served from `src/images/`; there are no external fonts, trackers, widgets or
