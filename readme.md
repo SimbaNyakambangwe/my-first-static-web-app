@@ -5,7 +5,9 @@ served from `src/images/`; the source does not include external fonts, trackers,
 widgets or photo-CDN dependencies. Netlify adds its own hosting HUD to the live
 Free-plan pages. The Get directions button opens the locally hosted
 directions picture from the original reference; a separate link opens Google Maps.
-No guest data is collected, and RSVP is intentionally omitted.
+The travel-plans form collects names, optional plus-one names and arrival dates,
+and accommodation interest through Netlify Forms. Wedding RSVP is intentionally
+omitted; submitting travel plans does not make an accommodation booking.
 
 ## Local preview
 
@@ -45,6 +47,26 @@ back links return to the wedding page and its sections.
 Gallery links open the original local photographs without JavaScript; JavaScript
 adds a native modal viewer with previous/next controls, arrow keys and Escape to
 close. FAQs use native keyboard-accessible disclosure elements.
+
+## Travel-plans form
+
+The form in `src/index.html` uses native HTML validation and Netlify Forms,
+with a hidden honeypot for spam filtering. No JavaScript, browser-only storage,
+payment collection or external form account is required. Arrival dates can be
+left blank when not yet confirmed. Plus-one names are optional, one per line.
+Only the full name and accommodation-interest choice are required.
+
+In the existing Netlify project's **Forms** settings, enable form detection
+before deploying the form. After deployment, check that `travel-plans` appears
+in Forms. Responses are available there to the project's authorized members;
+they are not published in the repository or on the website. Monitor the Free
+plan's usage and limits in Netlify rather than upgrading automatically.
+
+Netlify handles the POST and redirects accepted submissions to
+`travel-thanks.html`. Local Python preview and the existing Azure static hosting
+do not process these submissions: use the live Netlify website to submit, and
+do not treat a local preview as a working backend. Verify new deployments with
+a clearly labelled synthetic test response, not real guest information.
 
 ## Hosting
 
