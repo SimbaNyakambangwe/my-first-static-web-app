@@ -24,7 +24,7 @@ available. No dependency installation or build step is required.
 
 Edit the wedding sections in `src/index.html`, the separate photo gallery in
 `src/gallery.html`, and the colour/typography variables in `src/styles.css`.
-The confirmed invitation is **15 August 2027 at 11:00am,
+The confirmed invitation is **15 August 2027 at 11:30am,
 The Raintree Venue, Harare, Zimbabwe**, with directions to **1 Langhorn Lane,
 Umwinsidale**. Times are local to Harare (UTC+02:00).
 
