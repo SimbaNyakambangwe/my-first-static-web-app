@@ -1,8 +1,9 @@
 # Simbarashe & Rujeko wedding website
 
 A standalone, responsive HTML/CSS/JavaScript wedding website. All photographs are
-served from `src/images/`; there are no external fonts, trackers, widgets or
-photo-CDN dependencies. The Get directions button opens the locally hosted
+served from `src/images/`; the source does not include external fonts, trackers,
+widgets or photo-CDN dependencies. Netlify adds its own hosting HUD to the live
+Free-plan pages. The Get directions button opens the locally hosted
 directions picture from the original reference; a separate link opens Google Maps.
 No guest data is collected, and RSVP is intentionally omitted.
 
@@ -47,8 +48,22 @@ close. FAQs use native keyboard-accessible disclosure elements.
 
 ## Hosting
 
+### Live Netlify website
+
+The public website is https://simbaandrujeko.netlify.app/ on Netlify's Free plan.
+It was deployed by uploading the contents of `src/`, with `index.html` at the
+upload root. No build step is required.
+
+This is a **manual upload**, not a Git-connected deployment. Pushing commits to
+GitHub does not update this Netlify website. Publish an updated upload through
+the existing `simbaandrujeko` project's Netlify dashboard to update the live site;
+do not create another project. Netlify serves the gallery at `/gallery` and
+rewrites the `.html` navigation links accordingly.
+
+### Existing Azure workflow
+
 The existing Azure Static Web Apps workflow serves `./src` directly, with no API
 or build output directory. This implementation preserves those settings.
-Deployment still requires the repository's existing Azure deployment secret.
+Azure deployment requires the repository's existing Azure deployment secret.
 The workflow deploys on pushes to `main` and pull requests targeting `main`;
 local preview alone does not deploy anything.
