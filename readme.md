@@ -19,8 +19,9 @@ available. No dependency installation or build step is required.
 
 ## Editing wedding details
 
-Edit the semantic sections in `src/index.html` and the colour/typography variables
-in `src/styles.css`. The confirmed invitation is **15 August 2027 at 11:00am,
+Edit the wedding sections in `src/index.html`, the separate photo gallery in
+`src/gallery.html`, and the colour/typography variables in `src/styles.css`.
+The confirmed invitation is **15 August 2027 at 11:00am,
 The Raintree Venue, Harare, Zimbabwe**, with directions to **1 Langhorn Lane,
 Umwinsidale**. Times are local to Harare (UTC+02:00).
 
@@ -35,6 +36,10 @@ party follows the love story and includes 12 named cards, including the final
 member marked TBC. To add a headshot, save it in `src/images/` and replace that
 member's `headshot-placeholder` div with an image using `class="headshot"` and
 descriptive alt text; keep the adjacent name heading.
+
+The home page's "A little glimpse of us" and "Photos" links open `gallery.html`;
+the photo grid is not displayed on the home page. The gallery's navigation and
+back links return to the wedding page and its sections.
 
 Gallery links open the original local photographs without JavaScript; JavaScript
 adds a native modal viewer with previous/next controls, arrow keys and Escape to
