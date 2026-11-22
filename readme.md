@@ -20,10 +20,18 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory src
 Open http://127.0.0.1:8000. `npm start` runs the same command if Node/npm are
 available. No dependency installation or build step is required.
 
+Check page navigation and cross-page links with
+`python3 -m unittest discover -s tests`.
+
 ## Editing wedding details
 
-Edit the wedding sections in `src/index.html`, the separate photo gallery in
-`src/gallery.html`, and the colour/typography variables in `src/styles.css`.
+The welcome page is `src/index.html`. The menu opens separate static pages,
+not sections further down the home page: `wedding.html`, `story.html`,
+`party.html`, `gallery.html`, `schedule.html`, `travel.html`,
+`travel-plans.html`, `gifts.html` and `questions.html`. Edit the relevant page
+and the colour/typography variables in `src/styles.css`. Each content page
+includes the same navigation with its current page marked; keep those menus
+consistent when changing a destination. No router or build step is required.
 The confirmed invitation is **15 August 2027 at 11:30am,
 The Raintree Venue, Harare, Zimbabwe**, with directions to **1 Langhorn Lane,
 Umwinsidale**. Times are local to Harare (UTC+02:00).
@@ -35,14 +43,16 @@ approved information. There is no payment integration or fund collection link.
 
 The supplied SR monogram is edited into `src/images/monogram.png`, with a
 transparent background and muted green lettering to match the site. The bridal
-party follows the love story and includes 12 named cards, including the final
+party is linked from the story page and includes 12 named cards, including the final
 member marked TBC. To add a headshot, save it in `src/images/` and replace that
 member's `headshot-placeholder` div with an image using `class="headshot"` and
 descriptive alt text; keep the adjacent name heading.
 
-The home page's "A little glimpse of us" and "Photos" links open `gallery.html`;
-the photo grid is not displayed on the home page. The gallery's navigation and
-back links return to the wedding page and its sections.
+The story page's "A little glimpse of us" and the menu's "Photos" links open
+`gallery.html`; the photo grid is not displayed on the home page. The gallery's
+back link returns to `story.html`. The home page redirects previously shared
+section links such as `/#party` and `/#travel-plans` to their new pages when
+JavaScript is available. All new menu links work without JavaScript.
 
 Gallery links open the original local photographs without JavaScript; JavaScript
 adds a native modal viewer with previous/next controls, arrow keys and Escape to
@@ -50,7 +60,7 @@ close. FAQs use native keyboard-accessible disclosure elements.
 
 ## Travel-plans form
 
-The form in `src/index.html` uses native HTML validation and Netlify Forms,
+The form in `src/travel-plans.html` uses native HTML validation and Netlify Forms,
 with a hidden honeypot for spam filtering. No JavaScript, browser-only storage,
 payment collection or external form account is required. Arrival dates can be
 left blank when not yet confirmed. Plus-one names are optional, one per line.
@@ -82,8 +92,9 @@ upload root. No build step is required.
 This is a **manual upload**, not a Git-connected deployment. Pushing commits to
 GitHub does not update this Netlify website. Publish an updated upload through
 the existing `simbaandrujeko` project's Netlify dashboard to update the live site;
-do not create another project. Netlify serves the gallery at `/gallery` and
-rewrites the `.html` navigation links accordingly.
+do not create another project. Upload **all** of `src/`, including every HTML
+page. Netlify serves clean page URLs such as `/gallery`, `/party` and
+`/travel-plans`, and rewrites the `.html` navigation links accordingly.
 
 ### Existing Azure workflow
 

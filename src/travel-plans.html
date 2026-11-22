@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d5d5c9">
+  <meta name="description" content="Share your Zimbabwe arrival date, plus-one names and accommodation interest with Simbarashe &amp; Rujeko.">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your travel plans | Simbarashe &amp; Rujeko</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the travel form</a>
+  <header class="site-header">
+    <a class="monogram" href="index.html" aria-label="Simbarashe and Rujeko, home"><img src="images/monogram.png" width="700" height="599" alt="SR monogram" fetchpriority="high"></a>
+    <nav aria-label="Wedding navigation">
+      <a href="index.html">Home</a>
+      <a href="wedding.html">The wedding</a>
+      <a href="story.html">Our story</a>
+      <a href="party.html">Bridal party</a>
+      <a href="gallery.html">Photos</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="travel.html">Travel</a>
+      <a href="travel-plans.html" aria-current="page">Your travel plans</a>
+      <a href="gifts.html">Gifts</a>
+      <a href="questions.html">Questions</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="section travel-plans page-section" id="travel-plans" aria-labelledby="travel-plans-title">
+      <p class="eyebrow">Planning your visit</p>
+      <h1 id="travel-plans-title">Your travel <em>plans.</em></h1>
+      <p>Let us know when you expect to arrive in Zimbabwe and whether you would be interested in booking accommodation with us.</p>
+      <p class="pending" id="booking-note">We are gathering interest, not making bookings. Accommodation options and prices will be shared once confirmed. This is not a wedding RSVP.</p>
+      <form class="travel-form" name="travel-plans" method="POST" action="/travel-thanks.html" data-netlify="true" netlify-honeypot="bot-field" aria-describedby="booking-note privacy-note">
+        <input type="hidden" name="form-name" value="travel-plans">
+        <p hidden><label>Leave this field blank <input name="bot-field" autocomplete="off"></label></p>
+        <div class="form-field">
+          <label for="guest-name">Your full name (required)</label>
+          <input id="guest-name" name="name" type="text" autocomplete="name" maxlength="120" required>
+        </div>
+        <div class="form-field">
+          <label for="plus-ones">Plus-one names (optional)</label>
+          <p class="field-hint" id="plus-ones-hint">One name per line. Please include only guests covered by your invitation. Leave blank if travelling alone.</p>
+          <textarea id="plus-ones" name="plus-ones" rows="3" maxlength="1000" aria-describedby="plus-ones-hint"></textarea>
+        </div>
+        <div class="form-field">
+          <label for="arrival-date">Expected arrival date in Zimbabwe (optional)</label>
+          <p class="field-hint" id="arrival-hint">Leave blank if your date is not confirmed yet.</p>
+          <input id="arrival-date" name="arrival-date" type="date" aria-describedby="arrival-hint">
+        </div>
+        <div class="form-field">
+          <label for="accommodation-interest">Interested in booking accommodation with us? (required)</label>
+          <select id="accommodation-interest" name="accommodation-interest" required>
+            <option value="" selected disabled>Please choose</option>
+            <option value="Yes">Yes, I'm interested</option>
+            <option value="No">No, I'll arrange my own</option>
+            <option value="Undecided">I'm not sure yet</option>
+          </select>
+        </div>
+        <p class="pending" id="privacy-note">Your answers are stored in Netlify Forms for us to plan travel and accommodation. Please do not include passport or payment details.</p>
+        <button class="button" type="submit">Send travel plans <span aria-hidden="true">&rarr;</span></button>
+      </form>
+    </section>
+  </main>
+  <footer><p class="footer-names">Simbarashe <em>&amp;</em> Rujeko</p><p class="eyebrow">15.08.2027 &middot; Harare</p><a class="text-link" href="index.html">Back to home <span aria-hidden="true">&larr;</span></a></footer>
+</body>
+</html>
