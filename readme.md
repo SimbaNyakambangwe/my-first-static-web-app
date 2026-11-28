@@ -69,6 +69,8 @@ Descriptions are original summaries of the linked venues, checked in November
 2026. Confirm routes and venue offerings again before the August 2027 wedding.
 Air Zimbabwe's official London announcement confirms its direct Gatwick service;
 do not treat published routes as a guarantee of future schedules or prices.
+The Johannesburg route includes British Airways and Virgin Atlantic, with an
+Airlink onward-flight link. A Skyscanner link lets guests compare flight options.
 Wild Is Life advertises wildlife visits and high tea/sundowners, while Bushman
 Rock advertises wine-tasting lunches. These are independently booked suggestions,
 not organised wedding events or accommodation bookings.
