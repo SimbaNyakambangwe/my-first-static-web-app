@@ -26,7 +26,7 @@ Check page navigation and cross-page links with
 ## Editing wedding details
 
 The welcome page is `src/index.html`. The menu opens separate static pages,
-not sections further down the home page: `wedding.html`, `story.html`,
+not sections further down the home page: `wedding.html`, `dress-code.html`, `story.html`,
 `party.html`, `gallery.html`, `schedule.html`, `travel.html`,
 `international.html`, `travel-plans.html`, `gifts.html` and `questions.html`. Edit the relevant page
 and the colour/typography variables in `src/styles.css`. Each content page
@@ -37,7 +37,7 @@ The Raintree Venue, Harare, Zimbabwe**, with directions to **1 Langhorn Lane,
 Umwinsidale**. Times are local to Harare (UTC+02:00).
 
 The personal story, full schedule, transport arrangements,
-bridal party headshots, honeymoon fund, dress code and guest arrangements
+bridal party headshots, honeymoon fund and guest arrangements
 are visibly marked as awaiting confirmation. Replace those messages only with
 approved information. There is no payment integration or fund collection link.
 
@@ -57,6 +57,17 @@ JavaScript is available. All new menu links work without JavaScript.
 Gallery links open the original local photographs without JavaScript; JavaScript
 adds a native modal viewer with previous/next controls, arrow keys and Escape to
 close. FAQs use native keyboard-accessible disclosure elements.
+
+## Dress code
+
+`src/dress-code.html` is linked from every shared menu, immediately after The
+wedding. It displays the supplied attire guide from `src/images/dress-code.jpg`
+without cropping, with a full-size image link and readable HTML guidance.
+The confirmed palette is champagne beige, taupe, mocha, caramel, cognac,
+chocolate, espresso and dark brown. Ladies are asked to wear elegant styles;
+gents can wear suits, blazers and smart attire in complementary shades.
+White, ivory, cream and any shade of white are explicitly excluded. Keep the
+Questions answer consistent with this page when updating the dress code.
 
 ## International guest guide
 

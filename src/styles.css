@@ -142,6 +142,11 @@ body:has(.lightbox[open]) { overflow: hidden; }
 .guide-feature { margin-top: 32px; }
 .guide-feature img { width: 100%; max-height: 340px; object-fit: cover; }
 .guide-footnote { color: var(--muted); font-size: 12px; margin: 40px 0 0; }
+.attire-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 36px; }
+.attire-layout figure img { width: 100%; }
+.attire-details h2 { font-size: 28px; margin-bottom: 16px; }
+.attire-colours { list-style: none; padding: 0; margin: 0 0 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.attire-colours li { padding: 8px 12px; border: 1px solid var(--line); font-size: 14px; }
 
 @media (max-width: 760px) {
   .site-header { padding: 20px 24px 12px; gap: 18px; }
@@ -175,7 +180,7 @@ body:has(.lightbox[open]) { overflow: hidden; }
   .lightbox { padding: 14px; }
   .guest-tabs { gap: 6px; margin-bottom: 36px; font-size: 12px; }
   .guest-tabs a { padding: 8px 12px; }
-  .guide-grid, .activity-grid { grid-template-columns: 1fr; }
+  .guide-grid, .activity-grid, .attire-layout { grid-template-columns: 1fr; }
   .guide-card { padding: 24px; }
   .guide-card figure { margin: -24px -24px 24px; }
   .guide-note { padding: 20px; }
