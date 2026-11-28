@@ -71,7 +71,8 @@ Air Zimbabwe's official London announcement confirms its direct Gatwick service;
 do not treat published routes as a guarantee of future schedules or prices.
 The Johannesburg route includes British Airways and Virgin Atlantic, with an
 Airlink, Fastjet and South African Airways onward-flight selection. A Skyscanner
-link lets guests compare flight options.
+link lets guests compare flight options. RwandAir is also listed as a connection
+via Kigali.
 `travel.html#entry-requirements` reminds guests to check passport, visa and transit
 requirements and links to the government's official eVisa application portal at
 `https://www.evisa.gov.zw/app/index.html#/start`. No visa applications or passport
