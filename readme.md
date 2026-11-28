@@ -36,7 +36,7 @@ The confirmed invitation is **15 August 2027 at 11:30am,
 The Raintree Venue, Harare, Zimbabwe**, with directions to **1 Langhorn Lane,
 Umwinsidale**. Times are local to Harare (UTC+02:00).
 
-The personal story, full schedule, accommodation/transport recommendations,
+The personal story, full schedule, group accommodation/transport arrangements,
 bridal party headshots, honeymoon fund, dress code and guest arrangements
 are visibly marked as awaiting confirmation. Replace those messages only with
 approved information. There is no payment integration or fund collection link.
@@ -60,8 +60,8 @@ close. FAQs use native keyboard-accessible disclosure elements.
 
 ## International guest guide
 
-`src/international.html` has Flights, Activities, Restaurants & bars and Shopping
-categories. `src/guests.js` enhances the ordinary section links into accessible
+`src/international.html` has Flights, Accommodation, Activities, Restaurants & bars
+and Shopping categories. `src/guests.js` enhances the ordinary section links into accessible
 tabs, supporting arrow keys, Home/End, direct fragment links and browser history.
 Without JavaScript all categories remain visible and linked.
 
@@ -74,10 +74,15 @@ Airlink onward-flight link. A Skyscanner link lets guests compare flight options
 Wild Is Life advertises wildlife visits and high tea/sundowners, while Bushman
 Rock advertises wine-tasting lunches. These are independently booked suggestions,
 not organised wedding events or accommodation bookings.
+The Accommodation tab currently recommends Manna Resorts in Glen Lorne and
+links to its website and the existing accommodation-interest form. More
+recommendations are awaiting confirmation; no rooms, rates or group bookings
+are promised.
 
 Small local photographic previews are credited to their providers in the guide.
 Their sources are Lion Park's game-drive page, Wild Is Life's sanctuary page,
-Bushman Rock's day-trip page and Victoria 22's Wine Bar preview on its home page.
+Bushman Rock's day-trip page, Victoria 22's Wine Bar preview on its home page,
+and Manna Resorts' home page.
 Google and Facebook links are retained for the supplied places whose photos are
 viewed on those services; Facebook may require sign-in. There are no embedded
 third-party widgets or image requests during normal page loading.
