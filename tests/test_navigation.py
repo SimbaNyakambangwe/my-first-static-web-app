@@ -21,7 +21,7 @@ class Page(HTMLParser):
         if "id" in attributes:
             self.ids.add(attributes["id"])
         if tag == "nav":
-            self.in_navigation = True
+            self.in_navigation = attributes.get("aria-label") == "Wedding navigation"
         if tag == "a":
             self.links.append(attributes["href"])
             if self.in_navigation:

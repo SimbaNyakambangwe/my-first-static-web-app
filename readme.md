@@ -28,7 +28,7 @@ Check page navigation and cross-page links with
 The welcome page is `src/index.html`. The menu opens separate static pages,
 not sections further down the home page: `wedding.html`, `story.html`,
 `party.html`, `gallery.html`, `schedule.html`, `travel.html`,
-`travel-plans.html`, `gifts.html` and `questions.html`. Edit the relevant page
+`international.html`, `travel-plans.html`, `gifts.html` and `questions.html`. Edit the relevant page
 and the colour/typography variables in `src/styles.css`. Each content page
 includes the same navigation with its current page marked; keep those menus
 consistent when changing a destination. No router or build step is required.
@@ -57,6 +57,28 @@ JavaScript is available. All new menu links work without JavaScript.
 Gallery links open the original local photographs without JavaScript; JavaScript
 adds a native modal viewer with previous/next controls, arrow keys and Escape to
 close. FAQs use native keyboard-accessible disclosure elements.
+
+## International guest guide
+
+`src/international.html` has Flights, Activities, Restaurants & bars and Shopping
+categories. `src/guests.js` enhances the ordinary section links into accessible
+tabs, supporting arrow keys, Home/End, direct fragment links and browser history.
+Without JavaScript all categories remain visible and linked.
+
+Descriptions are original summaries of the linked venues, checked in November
+2026. Confirm routes and venue offerings again before the August 2027 wedding.
+Air Zimbabwe's official London announcement confirms its direct Gatwick service;
+do not treat published routes as a guarantee of future schedules or prices.
+Wild Is Life advertises wildlife visits and high tea/sundowners, while Bushman
+Rock advertises wine-tasting lunches. These are independently booked suggestions,
+not organised wedding events or accommodation bookings.
+
+Small local photographic previews are credited to their providers in the guide.
+Their sources are Lion Park's game-drive page, Wild Is Life's sanctuary page,
+Bushman Rock's day-trip page and Victoria 22's Wine Bar preview on its home page.
+Google and Facebook links are retained for the supplied places whose photos are
+viewed on those services; Facebook may require sign-in. There are no embedded
+third-party widgets or image requests during normal page loading.
 
 ## Travel-plans form
 
