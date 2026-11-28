@@ -74,15 +74,15 @@ Airlink onward-flight link. A Skyscanner link lets guests compare flight options
 Wild Is Life advertises wildlife visits and high tea/sundowners, while Bushman
 Rock advertises wine-tasting lunches. These are independently booked suggestions,
 not organised wedding events or accommodation bookings.
-The Accommodation tab currently recommends Manna Resorts in Glen Lorne and
-links to its website and the existing accommodation-interest form. More
-recommendations are awaiting confirmation; no rooms, rates or group bookings
-are promised.
+The Accommodation tab recommends Manna Resorts, Residence Hotel, Highlands
+House and Hyatt Regency Harare The Meikles, with photographs and provider links.
+It also links to the existing accommodation-interest form. Recommendations
+are not reservations; no rooms, rates or group bookings are promised.
 
 Small local photographic previews are credited to their providers in the guide.
 Their sources are Lion Park's game-drive page, Wild Is Life's sanctuary page,
 Bushman Rock's day-trip page, Victoria 22's Wine Bar preview on its home page,
-and Manna Resorts' home page.
+and the hotels' home pages.
 Google and Facebook links are retained for the supplied places whose photos are
 viewed on those services; Facebook may require sign-in. There are no embedded
 third-party widgets or image requests during normal page loading.
