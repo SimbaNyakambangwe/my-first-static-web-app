@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#d5d5c9">
-  <meta name="description" content="Share your Zimbabwe arrival date, plus-one names and accommodation interest with Simbarashe &amp; Rujeko.">
+  <meta name="description" content="Share your Zimbabwe arrival date and plus-one names with Simbarashe &amp; Rujeko.">
   <link rel="stylesheet" href="styles.css">
   <title>Your travel plans | Simbarashe &amp; Rujeko</title>
 </head>
@@ -30,9 +30,9 @@
     <section class="section travel-plans page-section" id="travel-plans" aria-labelledby="travel-plans-title">
       <p class="eyebrow">Planning your visit</p>
       <h1 id="travel-plans-title">Your travel <em>plans.</em></h1>
-      <p>Let us know when you expect to arrive in Zimbabwe and whether you would be interested in booking accommodation with us.</p>
-      <p class="pending" id="booking-note">We are gathering interest, not making bookings. Accommodation options and prices will be shared once confirmed. This is not a wedding RSVP.</p>
-      <form class="travel-form" name="travel-plans" method="POST" action="/travel-thanks.html" data-netlify="true" netlify-honeypot="bot-field" aria-describedby="booking-note privacy-note">
+      <p>Let us know when you expect to arrive in Zimbabwe and who will be travelling with you.</p>
+      <p class="pending" id="arrival-note">This form helps us plan for your arrival and is not a wedding RSVP. Please book accommodation directly with your chosen hotel.</p>
+      <form class="travel-form" name="travel-plans" method="POST" action="/travel-thanks.html" data-netlify="true" netlify-honeypot="bot-field" aria-describedby="arrival-note privacy-note">
         <input type="hidden" name="form-name" value="travel-plans">
         <p hidden><label>Leave this field blank <input name="bot-field" autocomplete="off"></label></p>
         <div class="form-field">
@@ -49,16 +49,7 @@
           <p class="field-hint" id="arrival-hint">Leave blank if your date is not confirmed yet.</p>
           <input id="arrival-date" name="arrival-date" type="date" aria-describedby="arrival-hint">
         </div>
-        <div class="form-field">
-          <label for="accommodation-interest">Interested in booking accommodation with us? (required)</label>
-          <select id="accommodation-interest" name="accommodation-interest" required>
-            <option value="" selected disabled>Please choose</option>
-            <option value="Yes">Yes, I'm interested</option>
-            <option value="No">No, I'll arrange my own</option>
-            <option value="Undecided">I'm not sure yet</option>
-          </select>
-        </div>
-        <p class="pending" id="privacy-note">Your answers are stored in Netlify Forms for us to plan travel and accommodation. Please do not include passport or payment details.</p>
+        <p class="pending" id="privacy-note">Your answers are stored in Netlify Forms for us to plan for your arrival. Please do not include passport or payment details.</p>
         <button class="button" type="submit">Send travel plans <span aria-hidden="true">&rarr;</span></button>
       </form>
     </section>

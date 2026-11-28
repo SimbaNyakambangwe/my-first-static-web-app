@@ -13,6 +13,7 @@ class Page(HTMLParser):
         self.ids = set()
         self.links = []
         self.navigation = []
+        self.fields = []
         self.in_navigation = False
         self.feed(path.read_text())
 
@@ -22,6 +23,8 @@ class Page(HTMLParser):
             self.ids.add(attributes["id"])
         if tag == "nav":
             self.in_navigation = attributes.get("aria-label") == "Wedding navigation"
+        if tag in ("input", "textarea", "select"):
+            self.fields.append(attributes)
         if tag == "a":
             self.links.append(attributes["href"])
             if self.in_navigation:
@@ -33,6 +36,15 @@ class Page(HTMLParser):
 
 
 class NavigationTests(unittest.TestCase):
+    def test_travel_form_collects_arrivals_without_accommodation(self):
+        page = Page(ROOT / "travel-plans.html")
+        fields = {field["name"]: field for field in page.fields
+                  if field.get("name") not in ("form-name", "bot-field")}
+        self.assertEqual(set(fields), {"name", "plus-ones", "arrival-date"})
+        self.assertIn("required", fields["name"])
+        self.assertNotIn("required", fields["plus-ones"])
+        self.assertNotIn("required", fields["arrival-date"])
+
     def test_menu_opens_pages_and_marks_the_current_page(self):
         pages = {path.name: Page(path) for path in ROOT.glob("*.html")}
         home_menu = [link["href"] for link in pages["index.html"].navigation]

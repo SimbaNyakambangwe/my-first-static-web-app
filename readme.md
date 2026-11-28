@@ -5,9 +5,9 @@ served from `src/images/`; the source does not include external fonts, trackers,
 widgets or photo-CDN dependencies. Netlify adds its own hosting HUD to the live
 Free-plan pages. The Get directions button opens the locally hosted
 directions picture from the original reference; a separate link opens Google Maps.
-The travel-plans form collects names, optional plus-one names and arrival dates,
-and accommodation interest through Netlify Forms. Wedding RSVP is intentionally
-omitted; submitting travel plans does not make an accommodation booking.
+The travel-plans form collects names, optional plus-one names and arrival dates
+through Netlify Forms. Wedding RSVP is intentionally omitted. Guests book their
+own accommodation directly; there is no central accommodation booking.
 
 ## Local preview
 
@@ -36,7 +36,7 @@ The confirmed invitation is **15 August 2027 at 11:30am,
 The Raintree Venue, Harare, Zimbabwe**, with directions to **1 Langhorn Lane,
 Umwinsidale**. Times are local to Harare (UTC+02:00).
 
-The personal story, full schedule, group accommodation/transport arrangements,
+The personal story, full schedule, transport arrangements,
 bridal party headshots, honeymoon fund, dress code and guest arrangements
 are visibly marked as awaiting confirmation. Replace those messages only with
 approved information. There is no payment integration or fund collection link.
@@ -70,14 +70,19 @@ Descriptions are original summaries of the linked venues, checked in November
 Air Zimbabwe's official London announcement confirms its direct Gatwick service;
 do not treat published routes as a guarantee of future schedules or prices.
 The Johannesburg route includes British Airways and Virgin Atlantic, with an
-Airlink onward-flight link. A Skyscanner link lets guests compare flight options.
+Airlink, Fastjet and South African Airways onward-flight selection. A Skyscanner
+link lets guests compare flight options.
+`travel.html#entry-requirements` reminds guests to check passport, visa and transit
+requirements and links to the government's official eVisa application portal at
+`https://www.evisa.gov.zw/app/index.html#/start`. No visa applications or passport
+details are collected by this website.
 Wild Is Life advertises wildlife visits and high tea/sundowners, while Bushman
 Rock advertises wine-tasting lunches. These are independently booked suggestions,
 not organised wedding events or accommodation bookings.
 The Accommodation tab recommends Manna Resorts, Residence Hotel, Highlands
 House and Hyatt Regency Harare The Meikles, with photographs and provider links.
-It also links to the existing accommodation-interest form. Recommendations
-are not reservations; no rooms, rates or group bookings are promised.
+Guests book directly with their chosen hotel. Recommendations are not
+reservations; no rooms, rates or central bookings are arranged by this website.
 
 Small local photographic previews are credited to their providers in the guide.
 Their sources are Lion Park's game-drive page, Wild Is Life's sanctuary page,
@@ -93,13 +98,15 @@ The form in `src/travel-plans.html` uses native HTML validation and Netlify Form
 with a hidden honeypot for spam filtering. No JavaScript, browser-only storage,
 payment collection or external form account is required. Arrival dates can be
 left blank when not yet confirmed. Plus-one names are optional, one per line.
-Only the full name and accommodation-interest choice are required.
+Only the full name is required. Accommodation interest is no longer collected.
+Keep the existing `travel-plans` form identity so earlier responses are preserved;
+do not delete the form or historical submissions when updating its fields.
 
 In the existing Netlify project's **Forms** settings, enable form detection
 before deploying the form. After deployment, check that `travel-plans` appears
 in Forms. Responses are available there to the project's authorized members;
-use **Download CSV** to review all fields, including arrival dates and
-accommodation interest. The standard `name` field also identifies the guest in
+use **Download CSV** to review the arrival details. Earlier responses may retain
+the former accommodation-interest column. The standard `name` field identifies the guest in
 Netlify's submissions list. Responses are not published in the repository or
 on the website. Monitor the Free
 plan's usage and limits in Netlify rather than upgrading automatically.
